@@ -1,16 +1,21 @@
+// import {GlobalStyle} from "./GlobalStyle"
+import { PageBoard } from "./Pageboard/PageBoard";
+import upcoming from "../upcoming-events.json"
+
 export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
+  return  <>
+
+    {/* <GlobalStyle/> */}
+    <PageBoard events={upcoming}
+    />
+    </>
+
 };
+
+
+/**
+ 1. app > PageBoard + tittle > cardItem
+ 2. PageBoard > upcoming-events-array
+ 3. Event > пропси name(srting), start(string), end(string), location(string), speaker(string) 
+ 4. 
+ */
