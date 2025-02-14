@@ -1,11 +1,11 @@
-// import {GlobalStyle} from "./GlobalStyle"
+import {GlobalStyle} from "./GlobalStyle"
 import { PageBoard } from "./Pageboard/PageBoard";
 import upcoming from "../upcoming-events.json"
 
 export const App = () => {
   return  <>
 
-    {/* <GlobalStyle/> */}
+    <GlobalStyle/>
     <PageBoard events={upcoming}
     />
     </>
