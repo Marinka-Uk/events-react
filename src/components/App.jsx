@@ -1,13 +1,22 @@
 import {GlobalStyle} from "./GlobalStyle"
 import { PageBoard } from "./Pageboard/PageBoard";
 import upcoming from "../upcoming-events.json"
+import { Container } from "./Container/Container";
+import { Tittle } from "./Tittle/Tittle";
+import { Event } from "./Event/Event";
 
 export const App = () => {
   return  <>
 
     <GlobalStyle/>
+    <Container>
+      <Tittle/>
+      <Event/>
+      <PageBoard/>
     <PageBoard events={upcoming}
     />
+    </Container>
+  
     </>
 
 };

@@ -1,5 +1,8 @@
-import style from "styled-component"
+import style from "styled-components"
 
-const Tittle =  style.h1`
-    color:black;
+export const Cont =  style.div`
+   font-family: Arial, sans-serif;
+  padding: 2rem;
+  background-color: #f4f7fb;
+
 `

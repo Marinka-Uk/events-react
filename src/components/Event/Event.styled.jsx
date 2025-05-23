@@ -1,13 +1,29 @@
-import style from "styled-component"
+import style from "styled-components"
 
-export const Tittle =  style.h1`
-    color:black;
-    font-size: 15px;
+
+
+export const Lili = style.li`
+      padding-left: 30px;
+padding-top: 10px;
+padding-bottom: 20px;
+width: 200px;
+background-color: #e8ffa9;
+border: solid , 2px , ##000000;
+border-radius: 20px
+`
+
+
+export const Icon = style.span`
+     font-size: 1.2rem;
 
 `
 
-// const OneCard = style.li`
+export const ItemTitle = style.h1`
+font-size: 14px;
+color: #9c979c;
+margin: 14px;
+`
 
-
-
-// `
+export const ItemText = style.p`
+color:#000000;
+`

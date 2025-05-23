@@ -1,9 +1,9 @@
 import { Event } from "components/Event/Event";
-
+import {List} from "./PageBoard.styled"
 
 export const PageBoard = ({events})=>{
-    return <ul>
-        {events.map((event)=>{
+    return <List>
+        {events && events.map((event)=>{
             return <Event 
     name = {event.name}
     location={event.location}
@@ -13,5 +13,5 @@ export const PageBoard = ({events})=>{
     type={event.type}
      />
         })}
-    </ul> 
+    </List> 
 }
